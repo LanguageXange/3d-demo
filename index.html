@@ -1,0 +1,58 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spline X Glassmorphism Demo </title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="mobile-view">
+      <h2>Please view on desktop - I'm too lazy to style other views</h2>
+    </div>
+    <section>
+      <main>
+        <div class="lds-spinner">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <!-- reduce objects and reduce subdivion -->
+
+        <iframe
+          src="https://my.spline.design/campusportaladjustcopy-105b7d708b2d54ad10bebcf741a569cd/"
+          frameborder="0"
+          width="100%"
+          height="100%"
+        ></iframe>
+
+        <div class="mask"></div>
+      </main>
+      <aside>
+        <h1>Glassmorphism X Spline</h1>
+        <button>CTA Button</button>
+      </aside>
+    </section>
+
+    <script type="text/javascript">
+      const iframe = document.querySelector("iframe");
+      const spinner = document.querySelector(".lds-spinner");
+
+      //   mimic loading state - set loader to hidden after 1.2 seconds
+      iframe.onload = function () {
+        setTimeout(() => {
+          spinner.style.visibility = "hidden";
+        }, 1200);
+      };
+    </script>
+  </body>
+</html>
